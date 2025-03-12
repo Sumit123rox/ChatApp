@@ -43,3 +43,69 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+
+# Firebase configuration
+lib/firebase_options.dart
+firebase.json
+
+# Firebase configuration files
+google-services.json
+GoogleService-Info.plist
+.firebase/
+
+# Environment and secrets
+.env
+.env.*
+key.properties
+secrets.json
+
+# Generated Dart files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+*.config.dart
+
+# iOS specific
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/Flutter/ephemeral/
+**/ios/Pods/
+
+# Android specific
+**/android/**/gradle-wrapper.jar
+**/android/.gradle
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/local.properties
+**/android/key.properties
+*.keystore
+*.jks
+
+# Coverage and testing
+coverage/
+test/coverage_helper_test.dart
+
+# FVM (Flutter Version Management)
+.fvm/
+
+# Mason
+mason-lock.json
+.mason/
+
+# Local development
+.vscode/settings.json
+.idea/
+*.iml
+
+# Build outputs
+build/
+*.ipa
+*.apk
+*.aab

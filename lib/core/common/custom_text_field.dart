@@ -27,6 +27,7 @@ class CustomTextField extends StatelessWidget {
     return TextFormField(
       controller: controller,
       obscureText: obscureText ?? false,
+      obscuringCharacter: "*",
       keyboardType: keyboardType,
       focusNode: focusNode,
       decoration: InputDecoration(
