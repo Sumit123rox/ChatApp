@@ -1,3 +1,5 @@
+import 'package:chat_app/data/services/service.locator.dart';
+import 'package:chat_app/router/app_rounter.dart';
 import 'package:flutter/material.dart';
 
 class BackButtonWidget extends StatelessWidget {
@@ -8,7 +10,7 @@ class BackButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return IconButton(
-      onPressed: () => Navigator.pop(context),
+      onPressed: () => locator<AppRouter>().pop(),
       icon: Container(
         width: 50,
         height: 50,

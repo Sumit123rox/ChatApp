@@ -11,7 +11,7 @@ plugins {
 android {
     namespace = "com.sumit.chat_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "27.0.12077973"
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -27,7 +27,8 @@ android {
         applicationId = "com.sumit.chat_app"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        multiDexEnabled = true
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
@@ -44,4 +45,20 @@ android {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    // Update Firebase BOM version
+    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
+    
+    // Add these specific implementations
+    implementation("com.google.android.gms:play-services-base:18.3.0")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("androidx.multidex:multidex:2.0.1")
+    
+    // Keep your other Firebase implementations
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-storage")
 }
