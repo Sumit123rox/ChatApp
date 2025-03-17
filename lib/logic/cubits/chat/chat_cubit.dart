@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:math';
 
 import 'package:chat_app/data/repositories/chat_repository.dart';
 import 'package:chat_app/logic/cubits/chat/chat_state.dart';
